@@ -2,6 +2,11 @@
   Mvision project is a project that involves monitoring vSphere from VMWare to observe its various operations and send notifications in case of abnormal activity. The project includes the use of Grafana, InfluxDB, and Telegraf for monitoring purposes.
 ## Required
 - [Docker Server Engine](https://docs.docker.com/engine/install/)
+## Setting Host
+To set the IP address to match your machine's hostname, you need to access your network settings and make sure that the IP address is correctly assigned to the hostname.
+```bash
+cat /etc/hosts
+```
 ## Installing Docker Compose
 On Ubuntu OS you can run command.
 ```bash
