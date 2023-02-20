@@ -8,7 +8,7 @@ read -p 'From-Name: ' fromName_alert
 echo -------------------------------
 sed -i -e 's/$email/'$email_alert'/' -e 's/$appPass/'$appPass_alert'/' -e 's/$from_name/'$fromName_alert'/' ./setup/setup_Grafana/configFile/grafana.ini
 cd ./setup/setup_Grafana
-docker compose up -d
+docker-compose up -d
 cd ..
 echo -------------------------------
 docker ps -a

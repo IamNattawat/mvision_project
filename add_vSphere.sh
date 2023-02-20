@@ -21,7 +21,7 @@ echo -------------------------------
 sed -i -e 's/$ip/'$ip_vSphere'/' -e 's/$portip/'$(($influxPort+$((i-1))))'/' -e 's/$host/'$ip_host'/' -e 's/$user/'$user_vSphere'/' -e 's/$pass/'$pass_vSphere'/' ./Monitor-$((i-1))/configFile/telegraf.conf
 sed -i -e 's/$ip/'$ip_vSphere'/' -e 's/$influx/'$(($influxPort+$((i-1))))'/' -e 's/$telegraf/'$(($telegrafPort+$((i-1))))'/' -e 's/$num/'$((i-1))'/' ./Monitor-$((i-1))/docker-compose.yml
 cd ./Monitor-$((i-1))
-docker compose up -d
+docker-compose up -d
 cd ../../..
 echo -------------------------------
 docker ps -a
