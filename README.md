@@ -3,20 +3,9 @@
 ## Required
 - [Docker Server Engine](https://docs.docker.com/engine/install/)
 ## Installing Docker Compose
-First, confirm the latest version available in their [releases](https://github.com/docker/compose/releases) page. At the time of this writing, the most current stable version is `2.16.0`.
-
-Download the binary file from the project’s GitHub page.
+On Ubuntu OS you can run command.
 ```bash
-curl -L "https://github.com/docker/compose/releases/download/2.16.0/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
-```
-After the binary file is downloaded, move it to the `/usr/local/bin` folder, and then make it executable.
-```bash
-sudo mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose 
-```
-To verify that the installation was successful, you can run.
-```bash
-docker-compose --version
+apt install docker-compose
 ```
 ## Getting Started
 To clone a git repository, you need to enter `sudo` mode first.
