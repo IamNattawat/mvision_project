@@ -3,7 +3,7 @@
 ## Required
 - [Docker Server Engine](https://docs.docker.com/engine/install/)
 ## Getting Started
-To clone a git repository, you need to enter `sudo` mode first
+To clone a git repository, you need to enter `sudo` mode first.
 ```bash
 git clone https://github.com/IamNattawat/mvision_project.git
 ```
