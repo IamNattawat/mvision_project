@@ -5,13 +5,14 @@
 ## Installing Docker Compose
 First, confirm the latest version available in their [releases](https://github.com/docker/compose/releases) page. At the time of this writing, the most current stable version is `2.16.0`.
 
-The following command will download the `2.16.0` release and save the executable file at `/usr/local/bin/docker-compose`, which will make this software globally accessible as `docker-compose`.
+Download the binary file from the project’s GitHub page.
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/2.16.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/2.16.0/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
 ```
-Next, set the correct permissions so that the `docker-compose` command is executable.
+After the binary file is downloaded, move it to the `/usr/local/bin` folder, and then make it executable.
 ```bash
-sudo chmod +x /usr/local/bin/docker-compose
+sudo mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose 
 ```
 To verify that the installation was successful, you can run.
 ```bash
