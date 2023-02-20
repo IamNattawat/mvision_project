@@ -8,7 +8,7 @@ To set the IP address to match your machine's hostname, you need to access your 
 cat /etc/hosts
 ```
 ## Installing Docker Compose
-On Ubuntu OS you can run command.
+On `Ubuntu OS` you can run command.
 ```bash
 apt install docker-compose
 ```
